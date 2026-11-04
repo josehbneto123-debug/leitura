@@ -12,9 +12,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
 <link rel="preload" as="image" href="assets/img/kit-capa-v2.jpg" fetchpriority="high">
-<script>window.pixelId = "6a6f561e88869ed44190d594";</script>
-<script src="assets/js/pixel.js" async defer></script>
 <script src="assets/js/latest.js" async defer data-utmify-prevent-xcod-sck data-utmify-prevent-subids></script>
+<script src="assets/js/meta-pixel.js" async></script>
 <style>
 :root{
   --bg:#fbeee8; --rose:#f8e4e6; --lav:#f1e8f6; --ink:#2a2226; --muted:#6e6168; --card:#fff; --border:#efdcd6;
@@ -163,7 +162,7 @@ section{padding-block:72px}
 .testi .who small{color:var(--muted);font-size:.85rem}
 
 /* Oferta */
-.offer-sec{background:linear-gradient(180deg,var(--bg),#fbdcd3)}
+.offer-sec{background:linear-gradient(180deg,var(--bg),#fbdcd3);scroll-margin-top:20px}
 .plans{display:grid;gap:22px;margin-top:40px;align-items:start}
 @media(min-width:860px){.plans{grid-template-columns:1fr 1fr}.plan.premium{order:2}.plan.basic{order:1;margin-top:34px}}
 .plan{background:#fff;border-radius:30px;padding:28px 24px;box-shadow:var(--shadow);position:relative;text-align:center}
@@ -318,7 +317,7 @@ footer a{color:var(--muted);margin:0 8px}
 .quiz{position:relative;border:3px solid #f0e3ff}
 .opt{background:#fff}
 .opt:hover{transform:translateX(4px)}
-.opt.picked{border-color:var(--pink);background:var(--pink-soft);transform:scale(.98)}
+.opt.picked{border-color:var(--pink);background:var(--pink-soft);transform:scale(.98);outline:3px solid var(--pink)}
 .quiz-result .phase{animation:pop .5s ease-out}
 .quiz-result .medal{font-size:3rem;display:block;animation:pop .6s ease-out}
 
@@ -524,12 +523,12 @@ footer a{color:var(--muted);margin:0 8px}
     <h2 class="rv">🎁 6 apostilas bônus para <span class="mark">cada fase</span> da leitura</h2>
     <p class="lead rv">Material extra para reforçar exatamente a fase em que seu filho está.</p>
     <div class="bonus-grid">
-      <div class="bn rv"><span class="lbl">Bônus 1</span><img src="assets/img/pre-silabicos.jpg" alt="Apostila Pré-silábica" loading="lazy"><h3>Apostila Pré-silábica</h3><p>Percepção visual, coordenação e discriminação auditiva.</p><div class="pr"><s>R$ 29,90</s> <b>GRÁTIS</b></div></div>
-      <div class="bn rv"><span class="lbl">Bônus 2</span><img src="assets/img/silabico-alfabetico.jpg" alt="Silábico Alfabético" loading="lazy"><h3>Silábico Alfabético</h3><p>Correspondência entre fonemas e grafemas.</p><div class="pr"><s>R$ 29,90</s> <b>GRÁTIS</b></div></div>
-      <div class="bn rv"><span class="lbl">Bônus 3</span><img src="assets/img/alfabetico.jpg" alt="Alfabético" loading="lazy"><h3>Alfabético</h3><p>Compreensão plena e escrita convencional.</p><div class="pr"><s>R$ 29,90</s> <b>GRÁTIS</b></div></div>
-      <div class="bn rv"><span class="lbl">Bônus 4</span><img src="assets/img/silabas-sem-valor.jpg" alt="Sílabas sem valor sonoro" loading="lazy"><h3>Sílabas sem valor sonoro</h3><p>Análise fonológica avançada.</p><div class="pr"><s>R$ 19,90</s> <b>GRÁTIS</b></div></div>
-      <div class="bn rv"><span class="lbl">Bônus 5</span><img src="assets/img/silabas-com-valor.jpg" alt="Sílabas com valor sonoro" loading="lazy"><h3>Sílabas com valor sonoro</h3><p>Fonema e grafema na construção da escrita.</p><div class="pr"><s>R$ 19,90</s> <b>GRÁTIS</b></div></div>
-      <div class="bn rv"><span class="lbl">Bônus 6</span><img src="assets/img/silabas-complexas.jpg" alt="Sílabas Complexas" loading="lazy"><h3>Sílabas Complexas</h3><p>BL, BR, CL, CR, DR, FL, FR, GL, GR, PL, PR e TR.</p><div class="pr"><s>R$ 29,90</s> <b>GRÁTIS</b></div></div>
+      <div class="bn rv"><span class="lbl">Bônus 1</span><img src="assets/img/pre-silabicos.jpg" alt="Apostila Pré-silábica" loading="lazy" width="800" height="1000"><h3>Apostila Pré-silábica</h3><p>Percepção visual, coordenação e discriminação auditiva.</p><div class="pr"><s>R$ 29,90</s> <b>GRÁTIS</b></div></div>
+      <div class="bn rv"><span class="lbl">Bônus 2</span><img src="assets/img/silabico-alfabetico.jpg" alt="Silábico Alfabético" loading="lazy" width="800" height="1000"><h3>Silábico Alfabético</h3><p>Correspondência entre fonemas e grafemas.</p><div class="pr"><s>R$ 29,90</s> <b>GRÁTIS</b></div></div>
+      <div class="bn rv"><span class="lbl">Bônus 3</span><img src="assets/img/alfabetico.jpg" alt="Alfabético" loading="lazy" width="800" height="1000"><h3>Alfabético</h3><p>Compreensão plena e escrita convencional.</p><div class="pr"><s>R$ 29,90</s> <b>GRÁTIS</b></div></div>
+      <div class="bn rv"><span class="lbl">Bônus 4</span><img src="assets/img/silabas-sem-valor.jpg" alt="Sílabas sem valor sonoro" loading="lazy" width="800" height="1000"><h3>Sílabas sem valor sonoro</h3><p>Análise fonológica avançada.</p><div class="pr"><s>R$ 19,90</s> <b>GRÁTIS</b></div></div>
+      <div class="bn rv"><span class="lbl">Bônus 5</span><img src="assets/img/silabas-com-valor.jpg" alt="Sílabas com valor sonoro" loading="lazy" width="800" height="1000"><h3>Sílabas com valor sonoro</h3><p>Fonema e grafema na construção da escrita.</p><div class="pr"><s>R$ 19,90</s> <b>GRÁTIS</b></div></div>
+      <div class="bn rv"><span class="lbl">Bônus 6</span><img src="assets/img/silabas-complexas.jpg" alt="Sílabas Complexas" loading="lazy" width="800" height="1000"><h3>Sílabas Complexas</h3><p>BL, BR, CL, CR, DR, FL, FR, GL, GR, PL, PR e TR.</p><div class="pr"><s>R$ 29,90</s> <b>GRÁTIS</b></div></div>
     </div>
     <div class="bonus-total rv">🎁 Você ganha <span class="count" data-count="159.40">R$ 159,40</span> em bônus → <b>inclusos no Premium</b></div>
   </div>
@@ -563,7 +562,7 @@ footer a{color:var(--muted);margin:0 8px}
         <div class="price-old">de R$ 39,90 por</div>
         <div class="price-big">R$ <span class="num" data-from="189.30" data-to="29.90">29,90</span></div>
         <div class="price-note">pagamento único · ou em até 12x no cartão</div>
-        <a class="btn green" data-checkout href="https://ggcheckout.app/checkout/v5/B0JvW6d5Y09Any5Mt10G?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=">Quero o Pacote Premium <span class="arr">→</span></a>
+        <a class="btn green" data-checkout href="https://ggcheckout.app/checkout/v5/Dm91rlXO1VitTMgYhx9F9L?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=">Quero o Pacote Premium <span class="arr">→</span></a>
         <p class="after">⚡ Acesso liberado em minutos no seu e-mail</p>
       </div>
       <div class="plan basic rv">
@@ -579,7 +578,7 @@ footer a{color:var(--muted);margin:0 8px}
         <div class="price-old">de R$ 29,90 por</div>
         <div class="price-big" style="font-size:2rem">R$ 22,90</div>
         <div class="price-note">pagamento único · ou em até 12x no cartão</div>
-        <a class="btn ghost" data-checkout href="https://ggcheckout.app/checkout/v5/sDKqLHnHoi93WYhkag1U?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=">Quero só o Kit Básico</a>
+        <a class="btn ghost" data-checkout href="https://ggcheckout.app/checkout/v5/ZUsqemW2uK0YnKXVmhWqQL?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=">Quero só o Kit Básico</a>
       </div>
     </div>
     <div class="trust" style="margin-top:26px"><span>🔒 Compra segura</span><span>💠 PIX ou cartão</span><span>🛡️ 7 dias de garantia</span><span>♾️ Sem mensalidade</span></div>
