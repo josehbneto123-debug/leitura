@@ -15,7 +15,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
-<link rel="preload" as="image" href="assets/img/kit-capa-v2.jpg" fetchpriority="high">
 <script src="assets/js/latest.js" async defer data-utmify-prevent-xcod-sck data-utmify-prevent-subids></script>
 <script src="assets/js/meta-pixel.js" async></script>
 <style>
@@ -480,6 +479,14 @@ h2{letter-spacing:-.015em}
 .lead.hook .hook-time .hl{background:#ffd23f;color:#2b1d17;padding:0 6px;border-radius:6px}
 .hook-time{display:block;margin-top:8px;font-family:Poppins,Nunito,sans-serif;font-weight:700;font-size:1.08rem;color:var(--ink)}
 @media(max-width:520px){.lead.hook{font-size:1.08rem;padding:14px 16px}.hook-time{font-size:1rem}}
+.ateque{max-width:640px;margin:44px auto 0}
+.chev svg{width:44px;height:44px;fill:none;stroke:var(--pink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;animation:chev 1.6s ease-in-out infinite}
+@keyframes chev{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+.ateque-t{font-size:1.32rem;line-height:1.5;font-weight:600;color:var(--ink);margin:12px auto 20px;max-width:560px}
+.ateque-t mark{background:#fff3c4;color:#7a5c00;padding:1px 6px;border-left:2px solid #e3c25a;border-right:2px solid #e3c25a}
+.ateque img{width:100%;height:auto;border-radius:22px;-webkit-mask-image:linear-gradient(to bottom,#000 72%,transparent);mask-image:linear-gradient(to bottom,#000 72%,transparent)}
+@media(max-width:520px){.ateque-t{font-size:1.15rem}}
+@media (prefers-reduced-motion:reduce){.chev svg{animation:none}}
 .perday{font-size:.86rem;font-weight:800;color:var(--green);margin:-10px 0 16px}
 </style>
 </head>
@@ -496,16 +503,13 @@ h2{letter-spacing:-.015em}
     <div class="pill">🎄 Ideia de presente de Natal · é só imprimir</div>
     <h1><span class="soft">Imagine o dia em que seu filho…</span>lê a historinha de dormir <span class="doodle">para você<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 120 4, 197 12"/></svg></span>.</h1>
     <p class="lead hook"><span class="hook-new">🆕 Lançamento</span><span class="hook-q">Seu filho conhece as letras, mas <u>trava na hora de ler</u>?</span>Muitas vezes o problema não é ele. <b>É a ordem.</b> Conheça o novo <b>Método Destrava Leitura</b>: 4 fases, uma de cada vez, do primeiro som à primeira frase.<span class="hook-time">⏱️ Só <span class="hl">10 minutos por dia</span>. Sem pressão.</span></p>
-    <div class="hero-img">
-      <img src="assets/img/kit-capa-v2.jpg" alt="Kit Básico de Alfabetização" width="800" height="800" fetchpriority="high">
-      <span class="sticker s1 float">+1.500 atividades</span>
-      <span class="sticker s2">🖨️ Pronto pra imprimir</span>
-      <span class="badge" aria-hidden="true"><span><b>R$22,90</b><small>pagamento<br>único</small></span></span>
-    </div>
-    <div class="price-big">R$ 22,90</div>
-    <div class="price-note">Kit Básico · pagamento único · ou em até 12x no cartão</div>
     <span class="btn-wrap pulse"><a class="btn" href="#oferta">Quero destravar a leitura dele <span class="arr">→</span></a></span>
     <div class="trust"><span>🔒 Compra segura</span><span>🛡️ 7 dias de garantia</span><span>⚡ Acesso imediato</span></div>
+    <div class="ateque">
+      <div class="chev" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M9 7l11 9 11-9M9 21l11 9 11-9"/></svg></div>
+      <p class="ateque-t">Muitos pais acham que <mark>cada criança tem seu tempo pra ler.</mark><br>Até que…</p>
+      <img src="assets/img/ate-que.jpg" alt="Criança cansada, debruçada sobre os livros" width="820" height="560">
+    </div>
   </div>
 </header>
 
