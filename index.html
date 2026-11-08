@@ -503,6 +503,13 @@ h2{letter-spacing:-.015em}
 .fases-mini span{font-size:.74rem;font-weight:800;color:#fff;padding:5px 10px;border-radius:99px;line-height:1.2}
 .fases-mini .f1{background:#d62839}.fases-mini .f2{background:#16804a}.fases-mini .f3{background:#e0a100}.fases-mini .f4{background:#2a6fb0}
 .inc li b{color:var(--ink)}
+@media(max-width:520px){.journey{grid-template-columns:1fr 1fr;gap:10px}.stage{padding:16px 14px}.stage h3{font-size:1rem}.stage p{font-size:.84rem}.stage .num{width:34px;height:34px;font-size:1rem;margin-bottom:10px}}
+.quem{list-style:none;padding:0;margin:26px auto 0;max-width:560px;display:grid;gap:10px;text-align:left}
+.quem li{display:flex;gap:12px;align-items:center;background:#fff;border-radius:16px;padding:14px 16px;font-weight:700;line-height:1.35;box-shadow:var(--shadow)}
+.quem li span{font-size:1.5rem;line-height:1}
+.passos{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.passos .rt{padding:20px;box-shadow:var(--shadow)}
+.dica{margin:22px auto 0;max-width:560px;font-weight:600;color:var(--ink)}
 .ateque{max-width:640px;margin:44px auto 0}
 .chev svg{width:44px;height:44px;fill:none;stroke:var(--pink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;animation:chev 1.6s ease-in-out infinite}
 @keyframes chev{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
@@ -549,7 +556,7 @@ h2{letter-spacing:-.015em}
     <span class="tag">O cenário no Brasil</span>
     <h2 class="rv">Você não está sozinha: <span class="mark">1 em cada 3 crianças</span> do 2º ano da rede pública ainda não está alfabetizada</h2>
     <div class="stat rv"><b>66%</b><span>dos alunos do 2º ano da rede pública estavam alfabetizados em 2025</span></div>
-    <p class="lead rv">A meta do país é passar de <b>80% até 2030</b>. Até lá, muitas crianças vão precisar de um reforço que a escola sozinha não consegue dar, e <b>o apoio em casa faz diferença</b>.</p>
+    <p class="lead rv">A meta do país é chegar a <b>80% até 2030</b>. Até lá, <b>o apoio em casa faz diferença</b>.</p>
     <p class="src rv">Fonte: Indicador Criança Alfabetizada 2025, Ministério da Educação (MEC), divulgado em março de 2026.</p>
   </div>
 </section>
@@ -598,12 +605,12 @@ h2{letter-spacing:-.015em}
   <div class="wrap center">
     <span class="tag mint">Para quem é</span>
     <h2 class="rv">O kit é <span class="mark">para você</span> se…</h2>
-    <div class="who-grid">
-      <div class="who-card rv"><div class="ico">🧒</div><h3>Seu filho está começando a ler</h3><p>De 2 a 8 anos: dos primeiros sons e formas (os pequenos, com a ajuda de um adulto) até quem já junta sílabas, mas trava nas palavras maiores.</p></div>
-      <div class="who-card rv"><div class="ico">🏠</div><h3>Você quer ajudar em casa</h3><p>Não precisa ser professora. Cada atividade é simples de explicar e leva poucos minutos.</p></div>
-      <div class="who-card rv"><div class="ico">👩‍🏫</div><h3>Você é professora ou dá reforço</h3><p>Imprima quantas vezes quiser e use com seus alunos, em sala ou no reforço.</p></div>
-      <div class="who-card rv"><div class="ico">🎁</div><h3>Você quer um presente que ensina</h3><p>Imprimiu, encadernou, embrulhou: um presente de Natal para usar o ano todo.</p></div>
-    </div>
+    <ul class="quem rv">
+      <li><span>🧒</span>Seu filho tem de 2 a 8 anos e está aprendendo a ler</li>
+      <li><span>🏠</span>Você quer ajudar em casa, sem precisar ser professora</li>
+      <li><span>👩‍🏫</span>Você é professora ou dá reforço escolar</li>
+      <li><span>🎁</span>Você quer um presente de Natal que ensina</li>
+    </ul>
   </div>
 </section>
 
@@ -630,32 +637,17 @@ h2{letter-spacing:-.015em}
   </div>
 </section>
 
-<!-- 7. FACILIDADE: rotina de 10 minutos -->
+<!-- 7. COMO FUNCIONA (+ dica de presente) -->
 <section style="background:var(--rose)">
   <div class="wrap center">
-    <span class="tag">Como funciona na prática</span>
-    <h2 class="rv">10 minutinhos por dia. <span class="mark">Só isso.</span></h2>
-    <p class="lead rv">Você não precisa ser professora nem ter horas livres.</p>
-    <div class="routine">
-      <div class="rt rv" style="background:var(--pink-soft)"><div class="ico">⚡</div><h3>1. Receba na hora</h3><p>Pagou, o acesso chega no seu e-mail em minutos.</p></div>
-      <div class="rt rv" style="background:var(--lilac)"><div class="ico">🖨️</div><h3>2. Imprima ou use no tablet</h3><p>Imprima quantas vezes quiser ou use direto na tela.</p></div>
-      <div class="rt rv" style="background:var(--blue)"><div class="ico">🧸</div><h3>3. Faça junto, brincando</h3><p>Uma atividade por dia, sentados lado a lado.</p></div>
-      <div class="rt rv" style="background:var(--mint)"><div class="ico">🎉</div><h3>4. Comemore cada vitória</h3><p>Cada página concluída é motivo de festa e de orgulho.</p></div>
+    <span class="tag">Como funciona</span>
+    <h2 class="rv">Simples assim: <span class="mark">10 minutinhos por dia</span></h2>
+    <div class="routine passos">
+      <div class="rt rv" style="background:#fff"><div class="ico">📩</div><h3>1. Receba na hora</h3><p>O acesso chega no seu e-mail em minutos.</p></div>
+      <div class="rt rv" style="background:#fff"><div class="ico">🖨️</div><h3>2. Imprima ou use no tablet</h3><p>Quantas vezes quiser.</p></div>
+      <div class="rt rv" style="background:#fff"><div class="ico">⏱️</div><h3>3. Uma atividade por dia</h3><p>Juntos, na ordem certa, sem pressão.</p></div>
     </div>
-  </div>
-</section>
-
-<!-- 8. PRESENTE DE NATAL -->
-<section class="gift-sec">
-  <div class="wrap center">
-    <span class="tag">🎄 Ideia de presente</span>
-    <h2 class="rv">Um presente de Natal que <span class="mark">vira rotina</span></h2>
-    <p class="lead rv">Em vez de mais um brinquedo, um kit de leitura para vocês usarem juntos o ano inteiro.</p>
-    <div class="routine gift-steps">
-      <div class="rt rv" style="background:#fde0de"><div class="ico">📩</div><h3>1. Compre hoje</h3><p>O acesso chega no seu e-mail em minutos.</p></div>
-      <div class="rt rv" style="background:#fff"><div class="ico">🖨️</div><h3>2. Imprima e encaderne</h3><p>Em casa ou numa papelaria. Encadernado, vira um livrinho de verdade.</p></div>
-      <div class="rt rv" style="background:#fff0c4"><div class="ico">🎁</div><h3>3. Embrulhe e entregue</h3><p>Debaixo da árvore, com lápis de cor e um laço. Pronto!</p></div>
-    </div>
+    <p class="dica rv">🎄 <b>Dica de Natal:</b> imprima, encaderne numa papelaria e dê de presente.</p>
   </div>
 </section>
 
@@ -750,18 +742,13 @@ h2{letter-spacing:-.015em}
     <span class="tag lilac">Dúvidas frequentes</span>
     <h2 class="rv">Tudo o que você precisa saber</h2>
     <div class="faq">
-      <details><summary>Qual a diferença entre o Básico e o Premium?</summary><p>Os dois têm o Método Destrava Leitura completo, com as 4 fases da leitura. O Premium vem também com 6 apostilas bônus, uma para reforçar cada fase, por só R$ 7 a mais.</p></details>
-      <details><summary>Dá para dar de presente de Natal?</summary><p>Dá sim! Você recebe os arquivos na hora, imprime em casa ou numa papelaria e pode encadernar para virar um livrinho. É um presente para usar o ano inteiro.</p></details>
       <details><summary>Para qual idade é indicado?</summary><p>De 2 a 8 anos. Os pequenos, de 2 e 3 anos, começam pelas atividades de sons, formas e coordenação da primeira fase, sempre com um adulto do lado. A partir dos 4 anos entram as sílabas, as palavras e a leitura.</p></details>
-      <details><summary>Quanto tempo leva para ver resultado?</summary><p>Depende de cada criança e da constância. O segredo é fazer um pouquinho todo dia: 10 minutinhos, uma atividade de cada vez, na ordem certa, comemorando cada página concluída.</p></details>
-      <details><summary>Funciona para crianças com TDAH ou autismo?</summary><p>As atividades são visuais, curtas e em pequenos passos, então podem ser usadas com qualquer criança, no ritmo dela. O kit não é um tratamento: para TDAH ou autismo, siga sempre a orientação dos profissionais que acompanham seu filho.</p></details>
-      <details><summary>Posso usar com meus alunos?</summary><p>Pode! Imprima quantas vezes quiser para usar em casa ou em sala de aula. Só não é permitido revender ou compartilhar os arquivos.</p></details>
-      <details><summary>Como recebo o material?</summary><p>O acesso é 100% digital. Minutos depois do pagamento, você recebe um e-mail com o link de download.</p></details>
-      <details><summary>Preciso imprimir tudo?</summary><p>Não. Você pode usar no tablet ou no celular. Se preferir, pode imprimir quantas vezes quiser.</p></details>
-      <details><summary>Quais são as formas de pagamento?</summary><p>PIX (aprovação na hora) e cartão de crédito em até 12x.</p></details>
-      <details><summary>Tenho que pagar mensalidade?</summary><p>Nunca. É pagamento único e o acesso é vitalício.</p></details>
-      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias para pedir o reembolso de 100% do valor, sem perguntas. É só mandar um e-mail para <a href="mailto:josehbneto123@gmail.com">josehbneto123@gmail.com</a>.</p></details>
-      <details><summary>Como falo com o suporte?</summary><p>É só mandar um e-mail para <a href="mailto:josehbneto123@gmail.com">josehbneto123@gmail.com</a>. Respondemos o mais rápido possível.</p></details>
+      <details><summary>Qual a diferença entre o Básico e o Premium?</summary><p>Os dois têm o Método Destrava Leitura completo, com as 4 fases. O Premium vem também com 6 apostilas bônus, uma para reforçar cada fase, por só R$ 7 a mais.</p></details>
+      <details><summary>Como recebo o material?</summary><p>É 100% digital. Minutos depois do pagamento, você recebe um e-mail com o link de download. Pode usar no tablet ou imprimir quantas vezes quiser.</p></details>
+      <details><summary>Quais são as formas de pagamento?</summary><p>PIX (aprovação na hora) ou cartão em até 12x. Pagamento único, sem mensalidade.</p></details>
+      <details><summary>Quanto tempo leva para ver resultado?</summary><p>Depende de cada criança e da constância. O segredo é fazer um pouquinho todo dia: 10 minutinhos, uma atividade de cada vez, na ordem certa.</p></details>
+      <details><summary>Funciona para crianças com TDAH ou autismo?</summary><p>As atividades são visuais, curtas e em pequenos passos, então podem ser usadas com qualquer criança, no ritmo dela. O kit não é um tratamento: siga sempre a orientação dos profissionais que acompanham seu filho.</p></details>
+      <details><summary>E se eu não gostar?</summary><p>Você tem 7 dias para pedir 100% do valor de volta, sem perguntas. É só mandar um e-mail para <a href="mailto:josehbneto123@gmail.com">josehbneto123@gmail.com</a>.</p></details>
     </div>
   </div>
 </section>
