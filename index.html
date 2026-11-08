@@ -498,6 +498,11 @@ h2{letter-spacing:-.015em}
 .calma{max-width:620px;margin:28px auto 0;font-size:1.15rem;line-height:1.6;color:var(--ink)}
 @media(max-width:520px){.pior{font-size:1.2rem;font-weight:600}.dores li{padding:14px 16px}}
 .pill-alert{background:#fff3c4;color:#6b4e00;border:1.5px solid #e3c25a;font-weight:800}
+.plan.premium h3,.plan.premium .sub{padding:0 40px}
+.fases-mini{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin:14px 0 2px}
+.fases-mini span{font-size:.74rem;font-weight:800;color:#fff;padding:5px 10px;border-radius:99px;line-height:1.2}
+.fases-mini .f1{background:#d62839}.fases-mini .f2{background:#16804a}.fases-mini .f3{background:#e0a100}.fases-mini .f4{background:#2a6fb0}
+.inc li b{color:var(--ink)}
 .ateque{max-width:640px;margin:44px auto 0}
 .chev svg{width:44px;height:44px;fill:none;stroke:var(--pink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;animation:chev 1.6s ease-in-out infinite}
 @keyframes chev{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
@@ -682,9 +687,11 @@ h2{letter-spacing:-.015em}
         <span class="ribbon">⭐ O mais completo</span>
         <span class="off" aria-hidden="true">+6<small>BÔNUS</small></span>
         <h3>Pacote Premium</h3>
-        <p class="sub">Kit Completo + 6 bônus exclusivos</p>
+        <p class="sub">Método Destrava Leitura completo + 6 bônus</p>
+        <div class="fases-mini" aria-label="As 4 fases do método"><span class="f1">1 · Pré-silábica</span><span class="f2">2 · Silábica</span><span class="f3">3 · Silábico-alfabética</span><span class="f4">4 · Alfabética</span></div>
         <img src="assets/img/pacote-premium-completo.jpg" alt="Pacote Premium — Kit Completo + 6 bônus exclusivos" loading="lazy" width="800" height="800">
         <ul class="inc">
+          <li><span><b>Método Destrava Leitura</b>: as 4 fases, na ordem certa</span></li>
           <li>Kit Completo: 4 materiais progressivos</li>
           <li>+1.500 atividades e +2.000 páginas ilustradas</li>
           <li class="bonus">Bônus 1: Apostila Pré-silábica</li>
@@ -704,9 +711,11 @@ h2{letter-spacing:-.015em}
       </div>
       <div class="plan basic rv">
         <h3>Kit Básico</h3>
-        <p class="sub">Só o Kit Completo</p>
+        <p class="sub">Método Destrava Leitura completo</p>
+        <div class="fases-mini" aria-label="As 4 fases do método"><span class="f1">1 · Pré-silábica</span><span class="f2">2 · Silábica</span><span class="f3">3 · Silábico-alfabética</span><span class="f4">4 · Alfabética</span></div>
         <img src="assets/img/kit-capa-v2.jpg" alt="Kit Básico de Alfabetização" loading="lazy" width="800" height="800">
         <ul class="inc">
+          <li><span><b>Método Destrava Leitura</b>: as 4 fases, na ordem certa</span></li>
           <li>Kit Completo: 4 materiais progressivos</li>
           <li>+1.500 atividades e +2.000 páginas ilustradas</li>
           <li>Acesso vitalício · 7 dias de garantia</li>
@@ -741,7 +750,7 @@ h2{letter-spacing:-.015em}
     <span class="tag lilac">Dúvidas frequentes</span>
     <h2 class="rv">Tudo o que você precisa saber</h2>
     <div class="faq">
-      <details><summary>Qual a diferença entre o Básico e o Premium?</summary><p>Os dois têm o Kit Completo com as 4 fases da leitura. O Premium vem também com 6 apostilas bônus, uma para reforçar cada fase, por só R$ 7 a mais.</p></details>
+      <details><summary>Qual a diferença entre o Básico e o Premium?</summary><p>Os dois têm o Método Destrava Leitura completo, com as 4 fases da leitura. O Premium vem também com 6 apostilas bônus, uma para reforçar cada fase, por só R$ 7 a mais.</p></details>
       <details><summary>Dá para dar de presente de Natal?</summary><p>Dá sim! Você recebe os arquivos na hora, imprime em casa ou numa papelaria e pode encadernar para virar um livrinho. É um presente para usar o ano inteiro.</p></details>
       <details><summary>Para qual idade é indicado?</summary><p>De 2 a 8 anos. Os pequenos, de 2 e 3 anos, começam pelas atividades de sons, formas e coordenação da primeira fase, sempre com um adulto do lado. A partir dos 4 anos entram as sílabas, as palavras e a leitura.</p></details>
       <details><summary>Quanto tempo leva para ver resultado?</summary><p>Depende de cada criança e da constância. O segredo é fazer um pouquinho todo dia: 10 minutinhos, uma atividade de cada vez, na ordem certa, comemorando cada página concluída.</p></details>
@@ -863,7 +872,7 @@ h2{letter-spacing:-.015em}
       box.querySelectorAll(".opt").forEach(function(b){b.addEventListener("click",function(){if(box.dataset.busy)return;box.dataset.busy=1;b.classList.add("picked");try{navigator.vibrate&&navigator.vibrate(10)}catch(e){}setTimeout(function(){delete box.dataset.busy;score.push(q.o[+b.dataset.i][2]);step++;render()},260)})});
     }else{
       var p=Math.max(0,Math.min(3,score[1]));if(score[0]===-1)p=0;if(score[2]===0&&p>0)p--;var f=PH[p];
-      box.innerHTML=bar(100)+'<div class="quiz-result"><span class="medal">🏅</span><div class="quiz-step">Resultado</div><div class="phase" style="background:'+f.c+'">'+f.n+'</div><p>'+f.t+'</p><p><b>O Pacote Premium tem uma apostila bônus específica para essa fase</b>, além do Kit Completo com as 4 fases.</p><a class="btn" href="#oferta">Ver o kit ideal para ele →</a><br><button class="linkish" id="redo">Refazer o teste</button></div>';
+      box.innerHTML=bar(100)+'<div class="quiz-result"><span class="medal">🏅</span><div class="quiz-step">Resultado</div><div class="phase" style="background:'+f.c+'">'+f.n+'</div><p>'+f.t+'</p><p><b>O Pacote Premium tem uma apostila bônus específica para essa fase</b>, além do Método Destrava Leitura completo, com as 4 fases.</p><a class="btn" href="#oferta">Ver o kit ideal para ele →</a><br><button class="linkish" id="redo">Refazer o teste</button></div>';
       
       document.getElementById("redo").addEventListener("click",function(){step=0;score=[];render()});
     }
