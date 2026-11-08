@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap">
-<script src="assets/js/latest.js" async defer data-utmify-prevent-xcod-sck data-utmify-prevent-subids></script>
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" async defer data-utmify-prevent-xcod-sck data-utmify-prevent-subids></script>
 <script src="assets/js/meta-pixel.js" async></script>
 <style>
 :root{
@@ -698,7 +698,7 @@ h2{letter-spacing:-.015em}
         <div class="price-big">R$ 29,90</div>
         <div class="price-note">pagamento único · ou em até 12x no cartão</div>
         <div class="perday">= menos de 9 centavos por dia no primeiro ano</div>
-        <a class="btn green" data-checkout href="https://ggcheckout.app/checkout/v5/Dm91rlXO1VitTMgYhx9F9L?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=">Quero o Pacote Premium <span class="arr">→</span></a>
+        <a class="btn green" data-checkout href="https://ggcheckout.app/checkout/v5/Dm91rlXO1VitTMgYhx9F9L">Quero o Pacote Premium <span class="arr">→</span></a>
         <p class="after">⚡ Acesso liberado em minutos no seu e-mail</p>
       </div>
       <div class="plan basic rv">
@@ -716,7 +716,7 @@ h2{letter-spacing:-.015em}
         <div class="price-big" style="font-size:2rem">R$ 22,90</div>
         <div class="price-note">pagamento único · ou em até 12x no cartão</div>
         <div class="perday">= menos de 7 centavos por dia no primeiro ano</div>
-        <a class="btn ghost" data-checkout href="https://ggcheckout.app/checkout/v5/ZUsqemW2uK0YnKXVmhWqQL?utm_source=organic&utm_campaign=&utm_medium=&utm_content=&utm_term=">Quero só o Kit Básico</a>
+        <a class="btn ghost" data-checkout href="https://ggcheckout.app/checkout/v5/ZUsqemW2uK0YnKXVmhWqQL">Quero só o Kit Básico</a>
       </div>
     </div>
     <div class="trust" style="margin-top:26px"><span>🔒 Compra segura</span><span>💠 PIX ou cartão</span><span>🛡️ 7 dias de garantia</span><span>♾️ Sem mensalidade</span><span>💬 Suporte por e-mail</span></div>
@@ -790,7 +790,7 @@ h2{letter-spacing:-.015em}
     if(Object.keys(o).length)save(o);
     var fbp=cookie("_fbp"),fbc=cookie("_fbc");if(fbp)o.fbp=fbp;if(fbc)o.fbc=fbc;return o}
   function decorate(a){try{var u=new URL(a.getAttribute("href"),location.href),p=params();
-    Object.keys(p).forEach(function(k){if(p[k]&&!u.searchParams.get(k))u.searchParams.set(k,p[k])});a.href=u.toString()}catch(e){}}
+    Object.keys(p).forEach(function(k){var c=u.searchParams.get(k);if(p[k]&&(!c||c==="organic"))u.searchParams.set(k,p[k])});a.href=u.toString()}catch(e){}}
   document.querySelectorAll("a[data-checkout]").forEach(function(a){decorate(a);a.addEventListener("click",function(){decorate(a)})});
 })();
 
