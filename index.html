@@ -755,10 +755,10 @@ footer a{color:var(--muted);margin:0 8px}
 (function(){
   var cards=[].slice.call(document.querySelectorAll("#pains .pain")),res=document.getElementById("painResult"),hint=document.getElementById("painHint");
   var msgs=["",
-    "💛 Você não está sozinha. Muitas mães passam por isso, e tem solução.",
+    "💛 Você não está sozinha. Muitas mães passam por isso, e dá para ajudar em casa.",
     "💛 Duas cenas assim pesam no coração. A boa notícia: o Kit foi feito exatamente para isso.",
     "💛 Três de quatro. Seu filho está pedindo o caminho certo, e ele existe.",
-    "💛 Todas as quatro. Respira: com uma atividade por dia, na ordem certa, isso muda."];
+    "💛 Todas as quatro. Respira: com uma atividade por dia, na ordem certa, dá para mudar esse cenário aos poucos."];
   cards.forEach(function(c){c.addEventListener("click",function(){
     c.setAttribute("aria-pressed",c.getAttribute("aria-pressed")==="true"?"false":"true");
     var n=cards.filter(function(x){return x.getAttribute("aria-pressed")==="true"}).length;
