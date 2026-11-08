@@ -509,7 +509,13 @@ h2{letter-spacing:-.015em}
 .quem li{display:flex;gap:12px;align-items:center;background:#fff;border-radius:16px;padding:14px 16px;font-weight:700;line-height:1.35;box-shadow:var(--shadow)}
 .quem li span{font-size:1.5rem;line-height:1}
 .passos{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-.passos .rt{padding:20px;box-shadow:var(--shadow)}
+.passos .rt{padding:18px 20px;box-shadow:var(--shadow);display:flex;gap:16px;align-items:center}
+.passos .rt .ico{font-size:1.9rem;line-height:1;flex:0 0 auto}
+.passos .rt h3{margin:0 0 2px}
+.faq summary,.faq details p{text-align:left}
+.sec-colada{padding-top:8px}
+.journey + .src{margin-top:22px}
+@media(max-width:520px){section{padding-block:56px}.sec-colada{padding-top:4px}.hero{padding-bottom:52px}}
 .dica{margin:22px auto 0;max-width:560px;font-weight:600;color:var(--ink)}
 .video-sec{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .seta svg{width:40px;height:40px;fill:none;stroke:#d4a537;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;animation:chev 1.6s ease-in-out infinite}
@@ -525,7 +531,7 @@ h2{letter-spacing:-.015em}
 .vsom b{display:block;font-size:1.05rem}
 .vsom[hidden]{display:none}
 @keyframes vpulse{0%,100%{box-shadow:0 0 0 0 rgba(34,150,74,.55)}50%{box-shadow:0 0 0 12px rgba(34,150,74,0)}}
-.video-sec .hero-cta{margin-top:26px}
+.video-sec .hero-cta{margin-top:26px;max-width:480px}
 @media (prefers-reduced-motion:reduce){.vsom,.seta svg{animation:none}}
 .ateque{max-width:640px;margin:44px auto 0}
 .chev svg{width:44px;height:44px;fill:none;stroke:var(--pink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;animation:chev 1.6s ease-in-out infinite}
@@ -603,7 +609,6 @@ h2{letter-spacing:-.015em}
       <div class="stage rv"><div class="num" style="background:#2a6fb0">4</div><h3>Leitura Independente</h3><small class="tec">Fase alfabética</small><p>Ler e escrever frases inteiras, entendendo o que leu.</p><span class="ex">"O pato nada no lago."</span></div>
     </div>
     <p class="src rv">O Método Destrava Leitura segue a <b>psicogênese da língua escrita</b>, de Emilia Ferreiro e Ana Teberosky, estudo que é referência na alfabetização nas escolas brasileiras.</p>
-    <p class="journey-note rv">Não sabe em que fase seu filho está? Descubra agora 👇</p>
   </div>
 </section>
 
@@ -645,7 +650,7 @@ h2{letter-spacing:-.015em}
 </section>
 
 <!-- 6. PROVA VISUAL: por dentro do material -->
-<section>
+<section class="sec-colada">
   <div class="wrap center">
     <span class="tag mint">Por dentro do Kit</span>
     <h2 class="rv">Veja tudo o que <span class="mark">você vai receber</span></h2>
@@ -673,9 +678,9 @@ h2{letter-spacing:-.015em}
     <span class="tag">Como funciona</span>
     <h2 class="rv">Simples assim: <span class="mark">10 minutinhos por dia</span></h2>
     <div class="routine passos">
-      <div class="rt rv" style="background:#fff"><div class="ico">📩</div><h3>1. Receba na hora</h3><p>O acesso chega no seu e-mail em minutos.</p></div>
-      <div class="rt rv" style="background:#fff"><div class="ico">🖨️</div><h3>2. Imprima ou use no tablet</h3><p>Quantas vezes quiser.</p></div>
-      <div class="rt rv" style="background:#fff"><div class="ico">⏱️</div><h3>3. Uma atividade por dia</h3><p>Juntos, na ordem certa, sem pressão.</p></div>
+      <div class="rt rv" style="background:#fff"><div class="ico">📩</div><div><h3>1. Receba na hora</h3><p>O acesso chega no seu e-mail em minutos.</p></div></div>
+      <div class="rt rv" style="background:#fff"><div class="ico">🖨️</div><div><h3>2. Imprima ou use no tablet</h3><p>Quantas vezes quiser.</p></div></div>
+      <div class="rt rv" style="background:#fff"><div class="ico">⏱️</div><div><h3>3. Uma atividade por dia</h3><p>Juntos, na ordem certa, sem pressão.</p></div></div>
     </div>
     <p class="dica rv">🎄 <b>Dica de Natal:</b> imprima, encaderne numa papelaria e dê de presente.</p>
   </div>
@@ -787,7 +792,7 @@ h2{letter-spacing:-.015em}
 <section class="final">
   <span class="bubble" style="left:6%;animation-duration:9s" aria-hidden="true">❄️</span><span class="bubble" style="left:22%;animation-duration:12s;animation-delay:-4s" aria-hidden="true">⭐</span><span class="bubble" style="left:48%;animation-duration:10s;animation-delay:-7s" aria-hidden="true">❄️</span><span class="bubble" style="left:72%;animation-duration:11s;animation-delay:-2s" aria-hidden="true">🎁</span><span class="bubble" style="left:90%;animation-duration:13s;animation-delay:-9s" aria-hidden="true">❄️</span>
   <div class="wrap narrow">
-    <h2 class="rv">Quem vai ler a historinha de dormir pode ser ele. 🎄</h2>
+    <h2 class="rv">🎄 Quem vai ler a historinha de dormir pode ser ele.</h2>
     <p class="lead rv">Imagine o orgulho no rostinho dele ao ler a primeira frase sozinho. <b>Esse momento começa com 10 minutos hoje.</b></p>
     <div style="margin-top:28px"><a class="btn" href="#oferta">Quero começar hoje <span class="arr">→</span></a></div>
     <div class="trust"><span>✓ Acesso vitalício</span><span>✓ 7 dias de garantia</span><span>✓ Pagamento seguro</span></div>
