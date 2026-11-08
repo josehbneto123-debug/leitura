@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#d62839">
 <title>Kit Completo de Alfabetização — Seu filho lendo com alegria</title>
 <meta name="description" content="Atividades progressivas e divertidas para crianças de 4 a 8 anos aprenderem a ler. 10 minutinhos por dia, sem brigas. Acesso imediato e 7 dias de garantia.">
 <meta property="og:title" content="Kit Completo de Alfabetização">
@@ -377,17 +378,82 @@ footer a{color:var(--muted);margin:0 8px}
   .float,.btn::after,.deco,.topbar,.topbar .gift,.btn .arr,.pulse::before,.hero-img .badge::before,.bn .pr b::after,.plan.premium::before,.ribbon,.seal svg,.bubble{animation:none}
   .doodle path{animation:none;stroke-dashoffset:0}
 }
+
+/* ===================== TEMA DE NATAL (nov/2026) ===================== */
+:root{
+  --bg:#fdf7ee; --rose:#fdeceb; --lav:#ecf6ee; --ink:#2b1d17; --muted:#6d5b51; --border:#f1e1cf;
+  --pink:#d62839; --pink-2:#e85a5a; --pink-soft:#fde0de; --lilac:#e1f1e5; --blue:#fff0c4;
+  --mint:#dcf2e4; --yellow:#fff0c4; --peach:#fde6d4; --green:#16804a; --cta:#c81d32; --cta-dark:#8f1424;
+  --shadow-pink:0 20px 50px -12px rgba(200,29,50,.38);
+}
+.tag.mint{color:#11683c}
+.tag.lilac{background:#fff0c4;color:#7a5200}
+.btn{background:linear-gradient(180deg,#e63946,var(--cta))}
+.pulse::before{animation-name:ringXmas}
+@keyframes ringXmas{0%{box-shadow:0 0 0 0 rgba(214,40,57,.5)}100%{box-shadow:0 0 0 18px rgba(214,40,57,0)}}
+.topbar{background:linear-gradient(90deg,#a3162a,#d62839,#a3162a);background-size:200% 100%}
+
+/* Luzinhas de Natal embaixo da barra do topo */
+.xmas-lights{height:26px;background:
+  radial-gradient(circle at 12px 15px,#ff3b4e 0 6px,transparent 7px) 0 0/96px 26px repeat-x,
+  radial-gradient(circle at 36px 15px,#ffd23f 0 6px,transparent 7px) 0 0/96px 26px repeat-x,
+  radial-gradient(circle at 60px 15px,#2bb36b 0 6px,transparent 7px) 0 0/96px 26px repeat-x,
+  radial-gradient(circle at 84px 15px,#4aa8ff 0 6px,transparent 7px) 0 0/96px 26px repeat-x,
+  linear-gradient(#1f5a36,#1f5a36) 0 6px/100% 2px no-repeat,#fdf7ee;
+  animation:twinkle 1.4s steps(2) infinite}
+@keyframes twinkle{50%{filter:brightness(1.4) saturate(1.25)}}
+
+/* Hero */
+.hero{background:radial-gradient(900px 500px at 10% -10%,#ffe1e1 0,transparent 60%),radial-gradient(800px 500px at 100% 20%,#e3f4e8 0,transparent 60%),var(--bg)}
+.hero-img::before{background:linear-gradient(135deg,#ffd6d6,#d8efdf,#fff0c4)}
+.hero-img .badge::before{border-color:#d62839}
+.stars{color:#f2b632}
+.deco.d1{background:#d62839}.deco.d2{background:#16804a}.deco.d3{background:#e0a100}.deco.d4{background:#2a6fb0}
+.deco.l::before{content:"";position:absolute;top:-7px;left:3px;right:3px;height:15px;background:#fff;border-radius:12px 12px 9px 9px;box-shadow:0 2px 0 rgba(0,0,0,.07)}
+.flake{position:absolute;top:-40px;z-index:0;pointer-events:none;user-select:none;opacity:.85;animation:hfall linear infinite}
+.flake.f1{left:5%;font-size:1.1rem;animation-duration:12s}
+.flake.f2{left:24%;font-size:.8rem;animation-duration:15s;animation-delay:-6s}
+.flake.f3{left:43%;font-size:1rem;animation-duration:13s;animation-delay:-3s}
+.flake.f4{left:63%;font-size:.75rem;animation-duration:16s;animation-delay:-9s}
+.flake.f5{left:80%;font-size:1.15rem;animation-duration:11s;animation-delay:-4s}
+.flake.f6{left:93%;font-size:.85rem;animation-duration:14s;animation-delay:-11s}
+@keyframes hfall{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(1100px) rotate(220deg);opacity:0}}
+
+/* Seções e cartões */
+.c1{background:#ffe3e1}.c2{background:#e3f3e7}.c3{background:#fff2c9}.c4{background:#fde6d4}
+.pain[aria-pressed="true"]{box-shadow:0 10px 30px -10px rgba(214,40,57,.45)}
+.progress i{background:linear-gradient(90deg,#d62839,#f2b632,#16804a);box-shadow:0 0 10px rgba(214,40,57,.5)}
+.quiz{border-color:#f6e2c4}
+.quiz-progress i{background:linear-gradient(90deg,#d62839,#f2b632)}
+.opt:hover{background:#fff5f4}
+@media(min-width:900px){.journey::before{background:repeating-linear-gradient(90deg,#f2b8b8 0 12px,transparent 12px 22px)}}
+.offer-sec{background:linear-gradient(180deg,var(--bg),#f9e0dc)}
+.ribbon{box-shadow:0 6px 16px -6px rgba(214,40,57,.6)}
+.plan.premium::before{background:conic-gradient(from var(--a,0deg),#d62839,#f2b632,#16804a,#f2b632,#d62839)}
+.bn{border-color:#efb4b4}
+.bn:hover{box-shadow:0 16px 30px -12px rgba(214,40,57,.4)}
+
+/* Final: fundo vermelho com neve caindo */
+.final{background:linear-gradient(160deg,#a3162a,#d62839 55%,#c81d32)}
+.final .btn{box-shadow:0 6px 0 #7a1020,0 20px 40px -14px rgba(0,0,0,.35)}
+.final .btn::after{background:linear-gradient(110deg,transparent 30%,rgba(214,40,57,.15) 50%,transparent 70%)}
+.final .bubble{bottom:auto;top:-50px;opacity:.9;animation-name:fall}
+@keyframes fall{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(720px) rotate(180deg);opacity:0}}
+
+@media (prefers-reduced-motion:reduce){.xmas-lights{animation:none}.flake{display:none}.final .bubble{animation:none}}
 </style>
 </head>
 <body>
 
 <div class="progress" aria-hidden="true"><i id="prog"></i></div>
-<div class="topbar"><span class="gift">📚</span> Kit Básico de Alfabetização por R$ 22,90 · Acesso vitalício</div>
+<div class="topbar"><span class="gift">🎄</span> Presente de Natal pra aprender brincando · Kit Básico por R$ 22,90 · Acesso vitalício</div>
+<div class="xmas-lights" aria-hidden="true"></div>
 
 <!-- 1. HERO: desejo + imagem do futuro -->
 <header class="hero">
   <span class="deco l d1" aria-hidden="true">A</span><span class="deco l d2" aria-hidden="true">B</span><span class="deco l d3" aria-hidden="true">C</span><span class="deco l d4" aria-hidden="true">D</span>
-  <span class="deco s s1" aria-hidden="true">⭐</span><span class="deco s s2" aria-hidden="true">✏️</span><span class="deco s s3" aria-hidden="true">✨</span>
+  <span class="deco s s1" aria-hidden="true">🎄</span><span class="deco s s2" aria-hidden="true">🎁</span><span class="deco s s3" aria-hidden="true">⭐</span>
+  <span class="flake f1" aria-hidden="true">❄️</span><span class="flake f2" aria-hidden="true">❄️</span><span class="flake f3" aria-hidden="true">❄️</span><span class="flake f4" aria-hidden="true">❄️</span><span class="flake f5" aria-hidden="true">❄️</span><span class="flake f6" aria-hidden="true">❄️</span>
   <div class="wrap">
     <div class="pill">💖 Escolhido por mais de 12.000 famílias</div>
     <h1><span class="soft">Imagine o dia em que seu filho…</span>lê a historinha de dormir <span class="doodle">para você<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 120 4, 197 12"/></svg></span>.</h1>
@@ -443,10 +509,10 @@ footer a{color:var(--muted);margin:0 8px}
     <h2 class="rv">Um caminho de <span class="mark">4 fases</span>, do primeiro rabisco à leitura</h2>
     <p class="lead rv">Cada fase concluída é uma conquista que a criança <b>sente</b>. É isso que faz ela querer continuar.</p>
     <div class="journey">
-      <div class="stage rv"><div class="num" style="background:#ff7ea1">1</div><h3>Pré-silábica</h3><p>Percepção visual, coordenação e discriminação dos sons.</p><span class="ex">Brincar com sons e formas</span></div>
-      <div class="stage rv"><div class="num" style="background:#b98cff">2</div><h3>Silábica</h3><p>Reconhecer sílabas e perceber que cada pedaço tem um som.</p><span class="ex">PA · TO</span></div>
-      <div class="stage rv"><div class="num" style="background:#5fb3ff">3</div><h3>Silábico-alfabética</h3><p>Ligar cada som à letra certa e montar as primeiras palavras.</p><span class="ex">PATO · GATO</span></div>
-      <div class="stage rv"><div class="num" style="background:#2bb889">4</div><h3>Alfabética</h3><p>Ler e escrever frases inteiras, entendendo o que leu.</p><span class="ex">"O pato nada no lago."</span></div>
+      <div class="stage rv"><div class="num" style="background:#d62839">1</div><h3>Pré-silábica</h3><p>Percepção visual, coordenação e discriminação dos sons.</p><span class="ex">Brincar com sons e formas</span></div>
+      <div class="stage rv"><div class="num" style="background:#16804a">2</div><h3>Silábica</h3><p>Reconhecer sílabas e perceber que cada pedaço tem um som.</p><span class="ex">PA · TO</span></div>
+      <div class="stage rv"><div class="num" style="background:#e0a100">3</div><h3>Silábico-alfabética</h3><p>Ligar cada som à letra certa e montar as primeiras palavras.</p><span class="ex">PATO · GATO</span></div>
+      <div class="stage rv"><div class="num" style="background:#2a6fb0">4</div><h3>Alfabética</h3><p>Ler e escrever frases inteiras, entendendo o que leu.</p><span class="ex">"O pato nada no lago."</span></div>
     </div>
     <p class="journey-note rv">Não sabe em que fase seu filho está? Descubra agora 👇</p>
   </div>
@@ -517,7 +583,7 @@ footer a{color:var(--muted);margin:0 8px}
 </section>
 
 <!-- 9. BÔNUS: deixa claro que vêm no Premium -->
-<section style="background:#fce3da">
+<section style="background:#eaf5ec">
   <div class="wrap center">
     <span class="tag">Só no Pacote Premium</span>
     <h2 class="rv">🎁 6 apostilas bônus para <span class="mark">cada fase</span> da leitura</h2>
@@ -616,9 +682,9 @@ footer a{color:var(--muted);margin:0 8px}
 
 <!-- 13. FECHAMENTO: imagem do futuro de novo -->
 <section class="final">
-  <span class="bubble" style="left:6%;animation-duration:9s" aria-hidden="true">💖</span><span class="bubble" style="left:22%;animation-duration:12s;animation-delay:-4s" aria-hidden="true">⭐</span><span class="bubble" style="left:48%;animation-duration:10s;animation-delay:-7s" aria-hidden="true">📖</span><span class="bubble" style="left:72%;animation-duration:11s;animation-delay:-2s" aria-hidden="true">💖</span><span class="bubble" style="left:90%;animation-duration:13s;animation-delay:-9s" aria-hidden="true">✨</span>
+  <span class="bubble" style="left:6%;animation-duration:9s" aria-hidden="true">❄️</span><span class="bubble" style="left:22%;animation-duration:12s;animation-delay:-4s" aria-hidden="true">⭐</span><span class="bubble" style="left:48%;animation-duration:10s;animation-delay:-7s" aria-hidden="true">❄️</span><span class="bubble" style="left:72%;animation-duration:11s;animation-delay:-2s" aria-hidden="true">🎁</span><span class="bubble" style="left:90%;animation-duration:13s;animation-delay:-9s" aria-hidden="true">❄️</span>
   <div class="wrap narrow">
-    <h2 class="rv">Daqui a algumas semanas, quem vai ler a historinha pode ser ele. 💖</h2>
+    <h2 class="rv">Daqui a algumas semanas, quem vai ler a historinha pode ser ele. 🎄</h2>
     <p class="lead rv">Imagine o orgulho no rostinho dele ao ler a primeira frase sozinho. <b>Esse momento começa com 10 minutos hoje.</b></p>
     <div style="margin-top:28px"><a class="btn" href="#oferta">Quero começar hoje <span class="arr">→</span></a></div>
     <div class="trust"><span>✓ Acesso vitalício</span><span>✓ 7 dias de garantia</span><span>✓ Pagamento seguro</span></div>
@@ -659,10 +725,10 @@ footer a{color:var(--muted);margin:0 8px}
   var calm=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
   function anim(el,dx,dy,rot,dur){el.animate([{transform:"translate(0,0) rotate(0)",opacity:1},{transform:"translate("+dx+"px,"+dy+"px) rotate("+rot+"deg)",opacity:0}],{duration:dur,easing:"cubic-bezier(.2,.7,.3,1)"}).onfinish=function(){el.remove()}}
   window.fx={
-    hearts:function(src){if(calm||!Element.prototype.animate)return;var r=src.getBoundingClientRect(),cx=r.right-34,cy=r.top+r.height/2,em=["💖","💕","⭐","✨"];
+    hearts:function(src){if(calm||!Element.prototype.animate)return;var r=src.getBoundingClientRect(),cx=r.right-34,cy=r.top+r.height/2,em=["🎄","⭐","❄️","🎁"];
       for(var i=0;i<8;i++){var p=document.createElement("span");p.className="particle";p.textContent=em[i%4];p.style.left=cx+"px";p.style.top=cy+"px";document.body.appendChild(p);
         anim(p,(Math.random()-.5)*140,-60-Math.random()*90,(Math.random()-.5)*60,900+Math.random()*400)}},
-    confetti:function(src){if(calm||!Element.prototype.animate)return;var r=src.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+60,cols=["#ff5d87","#ffb34d","#b98cff","#5fb3ff","#2bb889","#ffd23f"];
+    confetti:function(src){if(calm||!Element.prototype.animate)return;var r=src.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+60,cols=["#d62839","#16804a","#f2b632","#e85a5a","#2bb36b","#ffd23f"];
       for(var i=0;i<70;i++){var p=document.createElement("span");p.className="confetti";p.style.background=cols[i%cols.length];p.style.left=cx+"px";p.style.top=cy+"px";document.body.appendChild(p);
         var a=Math.random()*Math.PI*2,d=120+Math.random()*260;anim(p,Math.cos(a)*d,Math.sin(a)*d*0.6+220,Math.random()*720-360,1300+Math.random()*900)}}
   };
@@ -704,10 +770,10 @@ footer a{color:var(--muted);margin:0 8px}
     {q:"Como ele reage na hora de estudar?",o:[["😣","Foge ou chora",0],["😐","Faz, mas sem vontade",1],["🙂","Até gosta, quando é brincadeira",2]]}
   ];
   var PH=[
-    {n:"Fase Pré-silábica",c:"#ffd9dd",t:"Seu filho está no comecinho, a fase mais importante de todas. Com atividades de sons, formas e coordenação, ele cria a base para tudo o que vem depois."},
-    {n:"Fase Silábica",c:"#e9d8fd",t:"Ele já percebe que as palavras têm pedaços. Agora precisa ligar cada sílaba ao seu som, brincando, para o \"clique\" da leitura acontecer."},
-    {n:"Fase Silábico-alfabética",c:"#d8eeff",t:"Ele está muito perto! Falta ligar cada som à letra certa. É aqui que a leitura costuma \"destravar\" com prática diária."},
-    {n:"Fase Alfabética",c:"#d9f5e8",t:"Ele já lê, e agora é ganhar fluência e confiança com palavras maiores e sílabas complexas (BR, CL, TR…)."}
+    {n:"Fase Pré-silábica",c:"#fde0de",t:"Seu filho está no comecinho, a fase mais importante de todas. Com atividades de sons, formas e coordenação, ele cria a base para tudo o que vem depois."},
+    {n:"Fase Silábica",c:"#e1f1e5",t:"Ele já percebe que as palavras têm pedaços. Agora precisa ligar cada sílaba ao seu som, brincando, para o \"clique\" da leitura acontecer."},
+    {n:"Fase Silábico-alfabética",c:"#fff0c4",t:"Ele está muito perto! Falta ligar cada som à letra certa. É aqui que a leitura costuma \"destravar\" com prática diária."},
+    {n:"Fase Alfabética",c:"#e1eef8",t:"Ele já lê, e agora é ganhar fluência e confiança com palavras maiores e sílabas complexas (BR, CL, TR…)."}
   ];
   var step=0,score=[];
   function bar(p){return '<div class="quiz-progress"><i style="width:'+p+'%"></i></div>'}
