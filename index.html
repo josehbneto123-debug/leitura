@@ -511,6 +511,22 @@ h2{letter-spacing:-.015em}
 .passos{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
 .passos .rt{padding:20px;box-shadow:var(--shadow)}
 .dica{margin:22px auto 0;max-width:560px;font-weight:600;color:var(--ink)}
+.video-sec{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.seta svg{width:40px;height:40px;fill:none;stroke:#d4a537;stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;animation:chev 1.6s ease-in-out infinite}
+.video-sec h2{font-size:clamp(1.45rem,4.6vw,2rem);line-height:1.3;font-weight:600;max-width:620px;margin:8px auto 0}
+.video-sec h2 b{font-weight:800}
+.aperte{margin:14px 0 20px;font-weight:800;font-size:1.1rem}
+.aperte mark{background:#fff3c4;color:#7a5c00;padding:2px 8px;border-left:2px solid #e3c25a;border-right:2px solid #e3c25a}
+.vbox{position:relative;max-width:400px;margin:0 auto;border-radius:18px;overflow:hidden;background:#111;aspect-ratio:9/16;box-shadow:0 22px 46px -18px rgba(0,0,0,.45)}
+.vbox video{display:block;width:100%;height:100%;object-fit:cover}
+.vsom{all:unset;box-sizing:border-box;cursor:pointer;position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(78%,280px);padding:16px 14px;border-radius:14px;background:rgba(34,150,74,.88);color:#fff;text-align:center;font-family:Poppins,Nunito,sans-serif;box-shadow:0 10px 30px rgba(0,0,0,.3);animation:vpulse 1.8s ease-in-out infinite}
+.vsom span{display:block;font-size:.85rem;font-weight:600}
+.vsom svg{display:block;width:58px;height:58px;margin:8px auto;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.vsom b{display:block;font-size:1.05rem}
+.vsom[hidden]{display:none}
+@keyframes vpulse{0%,100%{box-shadow:0 0 0 0 rgba(34,150,74,.55)}50%{box-shadow:0 0 0 12px rgba(34,150,74,0)}}
+.video-sec .hero-cta{margin-top:26px}
+@media (prefers-reduced-motion:reduce){.vsom,.seta svg{animation:none}}
 .ateque{max-width:640px;margin:44px auto 0}
 .chev svg{width:44px;height:44px;fill:none;stroke:var(--pink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;animation:chev 1.6s ease-in-out infinite}
 @keyframes chev{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
@@ -534,7 +550,7 @@ h2{letter-spacing:-.015em}
     <div class="pill pill-alert">⚠️ Atenção, pais de crianças de 2 a 8 anos</div>
     <h1><span class="soft">Imagine o dia em que seu filho…</span>lê a historinha de dormir <span class="doodle">para você<svg viewBox="0 0 200 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 14 C 50 4, 120 4, 197 12"/></svg></span>.</h1>
     <p class="lead hook"><span class="hook-new">🆕 Lançamento</span><span class="hook-q">Seu filho conhece as letras, mas <u>trava na hora de ler</u>?</span>Muitas vezes o problema não é ele. <b>É a ordem.</b> Conheça o novo <b>Método Destrava Leitura</b>: 4 fases, uma de cada vez, do primeiro som à primeira frase.<span class="hook-time">⏱️ Só <span class="hl">10 minutos por dia</span>. Sem pressão.</span></p>
-    <span class="btn-wrap pulse hero-cta"><a class="btn" href="#oferta"><span class="btn-t">Quero destravar a leitura dele <span class="arr">→</span></span></a></span>
+    <span class="btn-wrap pulse hero-cta"><a class="btn" href="#video"><span class="btn-t">Quero destravar a leitura dele <span class="arr">→</span></span></a></span>
     <div class="trust"><span>🔒 Compra segura</span><span>🛡️ 7 dias de garantia</span><span>⚡ Acesso imediato</span></div>
     <div class="ateque">
       <div class="chev" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M9 7l11 9 11-9M9 21l11 9 11-9"/></svg></div>
@@ -588,6 +604,20 @@ h2{letter-spacing:-.015em}
     </div>
     <p class="src rv">O Método Destrava Leitura segue a <b>psicogênese da língua escrita</b>, de Emilia Ferreiro e Ana Teberosky, estudo que é referência na alfabetização nas escolas brasileiras.</p>
     <p class="journey-note rv">Não sabe em que fase seu filho está? Descubra agora 👇</p>
+  </div>
+</section>
+
+<!-- 4b. VÍDEO: "Aperte o play" -->
+<section class="video-sec" id="video">
+  <div class="wrap center">
+    <div class="seta" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 6v26M9 22l11 11 11-11"/></svg></div>
+    <h2 class="rv">Veja como é fácil <b>ensinar seu filho a ler</b> com o Método Destrava Leitura…</h2>
+    <p class="aperte"><mark>Aperte o play 👇</mark></p>
+    <div class="vbox">
+      <video id="vsl" src="assets/video/demo.mp4" poster="assets/video/demo.jpg" muted loop playsinline preload="metadata"></video>
+      <button class="vsom" id="vsom" type="button" aria-label="Ativar o som do vídeo"><span>Veja como é incrível…</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6M17 9l6 6"/></svg><b>Clique para ouvir!</b></button>
+    </div>
+    <span class="btn-wrap pulse hero-cta"><a class="btn" href="#oferta"><span class="btn-t">Quero baixar as atividades agora <span class="arr">→</span></span></a></span>
   </div>
 </section>
 
@@ -865,6 +895,14 @@ h2{letter-spacing:-.015em}
     }
   }
   render();
+})();
+
+/* ---------- Vídeo: mudo até clicar, depois recomeça com som ---------- */
+(function(){
+  var v=document.getElementById("vsl"),b=document.getElementById("vsom");if(!v||!b)return;var som=false;
+  function tenta(){var p=v.play();if(p&&p.catch)p.catch(function(){})}
+  if("IntersectionObserver" in window){new IntersectionObserver(function(es){es.forEach(function(e){if(som)return;if(e.isIntersecting)tenta();else v.pause()})},{threshold:.35}).observe(v)}else{tenta()}
+  b.addEventListener("click",function(){som=true;v.loop=false;v.muted=false;v.currentTime=0;v.controls=true;b.hidden=true;tenta();try{window.fbq&&fbq("trackCustom","VideoComSom")}catch(e){}});
 })();
 
 /* ---------- Revelar ao rolar + barra fixa ---------- */
