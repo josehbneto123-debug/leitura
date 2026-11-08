@@ -484,6 +484,19 @@ h2{letter-spacing:-.015em}
 .hero .trust{margin-top:18px}
 .ateque-after{margin:18px auto 0;max-width:560px;font-size:1.2rem;line-height:1.5;font-weight:600;color:var(--ink)}
 .ateque-after b{color:var(--pink)}
+.dores{list-style:none;padding:0;margin:24px auto 0;max-width:560px;display:grid;gap:12px;text-align:left}
+.dores li{display:flex;gap:14px;align-items:center;background:#fff;border:1px solid #f6d6d9;border-radius:16px;padding:16px 18px;font-weight:700;line-height:1.35;box-shadow:0 8px 18px -12px rgba(214,40,57,.4)}
+.dores svg{flex:0 0 28px;width:28px;height:28px;fill:none;stroke:var(--pink);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pior{max-width:560px;margin:26px auto 0;font-size:1.25rem;line-height:1.5;color:var(--ink)}
+.pior mark,.causa-box mark{background:#fff3c4;color:#7a5c00;padding:1px 6px;border-left:2px solid #e3c25a;border-right:2px solid #e3c25a}
+.causa-sec{background:#fff6dc;padding-top:40px}
+.alerta{display:block;font-size:4.2rem;line-height:1;margin:14px 0 22px}
+.causa-box{max-width:620px;margin:0 auto;border:2.5px dashed #d9b440;border-radius:20px;padding:30px 22px;background:#fffaea}
+.causa-box h2{font-size:clamp(1.5rem,4.5vw,2.1rem);line-height:1.3}
+.causa-box p{margin-top:16px;color:var(--muted);font-size:1.1rem;line-height:1.6}
+.causa-box p b{color:var(--ink)}
+.calma{max-width:620px;margin:28px auto 0;font-size:1.15rem;line-height:1.6;color:var(--ink)}
+@media(max-width:520px){.pior{font-size:1.2rem;font-weight:600}.dores li{padding:14px 16px}}
 .ateque{max-width:640px;margin:44px auto 0}
 .chev svg{width:44px;height:44px;fill:none;stroke:var(--pink);stroke-width:4;stroke-linecap:round;stroke-linejoin:round;animation:chev 1.6s ease-in-out infinite}
 @keyframes chev{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
@@ -514,26 +527,15 @@ h2{letter-spacing:-.015em}
       <div class="chev" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M9 7l11 9 11-9M9 21l11 9 11-9"/></svg></div>
       <p class="ateque-t">Muitos pais acham que <mark>cada criança tem seu tempo pra ler.</mark><br>Até que…</p>
       <img src="assets/img/ate-que.jpg" alt="Menina chorando na hora da lição, com a mãe ao lado" width="900" height="600">
-      <p class="ateque-after">…a lição vira choro, a nota cai e a criança começa a acreditar que <b>não é capaz</b>.</p>
+      <ul class="dores">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"/></svg><span>A lição de leitura vira um sofrimento</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"/></svg><span>As notas começam a cair</span></li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17"/></svg><span>Ela se sente "menos inteligente" que os colegas</span></li>
+      </ul>
+      <p class="pior"><mark>E o pior:</mark> começa a achar que não é capaz, sem entender por quê…</p>
     </div>
   </div>
 </header>
-
-<!-- 2. IDENTIFICAÇÃO: microcompromisso (ela marca o que vive) -->
-<section>
-  <div class="wrap center">
-    <span class="tag">Você reconhece?</span>
-    <h2 class="rv">Alguma dessas cenas <span class="mark">acontece na sua casa?</span></h2>
-    <div class="pain-grid" id="pains">
-      <button class="pain c1 rv" aria-pressed="false"><span class="emo">😔</span><span><h3>Ele conhece as letras, mas não lê</h3><p>Sabe o alfabeto de cor, mas trava na hora de juntar as sílabas.</p></span><span class="chk" aria-hidden="true">✓</span></button>
-      <button class="pain c2 rv" aria-pressed="false"><span class="emo">😣</span><span><h3>A hora da lição vira choro</h3><p>Ele resiste, foge, e o estudo vira motivo de briga em casa.</p></span><span class="chk" aria-hidden="true">✓</span></button>
-      <button class="pain c3 rv" aria-pressed="false"><span class="emo">📉</span><span><h3>A escola já chamou atenção</h3><p>A professora alertou e você não sabe mais o que fazer em casa.</p></span><span class="chk" aria-hidden="true">✓</span></button>
-      <button class="pain c4 rv" aria-pressed="false"><span class="emo">🥺</span><span><h3>Ele diz que "não consegue"</h3><p>A autoestima cai e ele começa a se comparar com os colegas.</p></span><span class="chk" aria-hidden="true">✓</span></button>
-    </div>
-    <p class="pain-hint" id="painHint">👆 Toque para marcar</p>
-    <div class="pain-result" id="painResult" hidden></div>
-  </div>
-</section>
 
 <!-- 2b. DADOS: o problema é real (fonte oficial) -->
 <section class="data-sec">
@@ -546,16 +548,16 @@ h2{letter-spacing:-.015em}
   </div>
 </section>
 
-<!-- 3. ALÍVIO: tira a culpa, devolve a esperança -->
-<section class="relief">
-  <div class="wrap relief-box">
-    <div class="rv">
-      <span class="tag mint">O que pouca gente sabe</span>
-      <h2>Não é falta de inteligência. <span class="mark">E não é culpa sua.</span></h2>
-      <p>A leitura se aprende em <b>fases</b>. Quando a criança é empurrada para a próxima fase antes de dominar a anterior, ela trava, se frustra e começa a fugir.</p>
-      <p>O que ela precisa é de <b>uma atividade de cada vez, na ordem certa</b>, e de pequenas vitórias todos os dias. É exatamente assim que funciona o <b>Método Destrava Leitura</b>.</p>
+<!-- 3. CAUSA: o que realmente trava + não é culpa sua -->
+<section class="causa-sec">
+  <div class="wrap center">
+    <div class="chev" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M9 7l11 9 11-9M9 21l11 9 11-9"/></svg></div>
+    <span class="alerta" aria-hidden="true">⚠️</span>
+    <div class="causa-box rv">
+      <h2>Entenda o que realmente <mark>trava a leitura do seu filho…</mark></h2>
+      <p><b>Atividades fora da ordem.</b> Quando a criança é empurrada para a próxima fase antes de dominar a anterior, a alfabetização fica mais lenta, frustrante e confusa, para ela e para você.</p>
     </div>
-    <div class="quote-card rv">"Seu filho não tem nada de errado. Ele só ainda não teve acesso ao caminho certo."<small>— A ideia por trás do Kit</small></div>
+    <p class="calma rv"><b>Mas calma, você não tem culpa disso…</b> Ninguém te mostrou que a leitura se aprende em fases, uma de cada vez, e que dá para ajudar seu filho de um jeito leve e divertido.</p>
   </div>
 </section>
 
